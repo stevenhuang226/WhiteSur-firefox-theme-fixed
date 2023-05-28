@@ -7,17 +7,17 @@
 
 menupopup, panel,
 :is(menupopup, panel)[type="arrow"] {
-	-moz-appearance: none !important;
-	--panel-background: var(--gnome-menu-background) !important;
-	--arrowpanel-border-radius: 12px !important;
-	--arrowpanel-background: var(--gnome-menu-background) !important;
-	--panel-border-radius: 12px !important;
-	--panel-padding: 6px !important;
-	--panel-shadow: var(--gnome-popover-shadow) !important;
-	--panel-shadow-margin: 3px 8px 13px !important;
-	color: var(--gnome-toolbar-color) !important;
+	-moz-appearance: none !important; /**/
+	--panel-background: var(--gnome-menu-background) !important;/**/
+	--arrowpanel-border-radius: 12px !important;/**/
+	--arrowpanel-background: var(--gnome-menu-background) !important;/**/
+	--panel-border-radius: 12px !important;/**/
+	--panel-padding: 6px !important;/**/
+	--panel-shadow: var(--gnome-popover-shadow) !important;/**/
+	/*--panel-shadow-margin: 3px 8px 13px !important;/*導致無法滾動清單*/ 
+	color: var(--gnome-toolbar-color) !important;/**/
 }
-
+/**/
 menupopup, panel,
 :is(menupopup, panel)[type="arrow"]
 :is(panel, menupopup)::part(content) {
@@ -171,7 +171,7 @@ menuitem, menupopup menu,
 .protections-popup-category,
 .identity-popup-content-blocking-category,
 #downloadsPanel-mainView .download-state {
-	-moz-appearance: none !important;
+	-moz-appearance: none !important; /**/
 	border-radius: 6px !important;
 	color: var(--gnome-toolbar-color) !important;
 	font: menu !important;
@@ -196,7 +196,7 @@ menuitem, menupopup menu,
 
 .bookmark-item .menu-right {
 	fill-opacity: 1 !important;
-}
+} /**/
 
 
 /* Menu buttons disabled */
